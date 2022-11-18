@@ -5,5 +5,3 @@ from users as u
 left join rides as r on u.id = r.user_id
 group by name, user_id
 order by travelled_distance desc, name;
-
--- still need to solve for edge case where there is a user with the same name but different id
